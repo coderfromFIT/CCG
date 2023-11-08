@@ -12,6 +12,10 @@ CCG serves as a portal and informational site, catering to diverse audiences wit
 
 ## Technical Specifications
 
+- ### Folder Structure
+ 
+IMPORTANT : deploy the `CCG icons` folder, extract it to the root directory of the C drive.
+
 ### Technologies
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: PHP
@@ -24,5 +28,7 @@ CCG serves as a portal and informational site, catering to diverse audiences wit
 
 ### Database
 - Utilizes a database to store information
+
+
 
 Repository: [CCG GitHub Repository](https://github.com/coderfromFIT/CCG)
