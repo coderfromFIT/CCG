@@ -1,8 +1,384 @@
 <!DOCTYPE html>
 <html>
  <head>
- <link rel="stylesheet" href="globals.css" />
- <link rel="stylesheet" href="style.css" />
+ 
+<style> 
+
+.news {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+   }
+   .news .div {
+    background-color: #ffffff;
+    width: 1920px;
+    height: 3071px;
+    position: relative;
+   }
+   .news .overlap {
+    position: absolute;
+    width: 1920px;
+    height: 187px;
+    top: 161px;
+    left: 0;
+   }
+   .news .line {
+    position: absolute;
+    width: 1920px;
+    height: 1px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+   }
+   .news .text-wrapper {
+    position: absolute;
+    width: 1168px;
+    top: 0;
+    left: 695px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #0053a5;
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: normal;
+   }
+   .news .rectangle {
+    width: 518px;
+    height: 152px;
+    top: 0;
+    left: 641px;
+    position: absolute;
+    object-fit: cover;
+   }
+   .news .civilian-cyber-guard {
+    position: absolute;
+    width: 442px;
+    top: -7px;
+    left: 199px;
+    font-family: "Inter-BoldItalic", Helvetica;
+    font-weight: 700;
+    font-style: italic;
+    color: #000000;
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: normal;
+   }
+   .news .img {
+    width: 66px;
+    height: 50px;
+    top: 31px;
+    left: 1213px;
+    position: absolute;
+    object-fit: cover;
+   }
+   .news .rectangle-2 {
+    width: 66px;
+    height: 50px;
+    top: 31px;
+    left: 1333px;
+    position: absolute;
+    object-fit: cover;
+   }
+   .news .rectangle-3 {
+    width: 66px;
+    height: 50px;
+    top: 31px;
+    left: 1453px;
+    position: absolute;
+    object-fit: cover;
+   }
+   .news .rectangle-4 {
+    position: absolute;
+    width: 118px;
+    height: 83px;
+    top: 14px;
+    left: 1573px;
+    object-fit: cover;
+   }
+   .news .overlap-group {
+    position: absolute;
+    width: 1920px;
+    height: 225px;
+    top: 2846px;
+    left: 0;
+    background-color: #f4f2f2;
+   }
+   .news .text-wrapper-2 {
+    position: absolute;
+    width: 376px;
+    top: 113px;
+    left: 1368px;
+    font-family: "Inter-LightItalic", Helvetica;
+    font-weight: 300;
+    font-style: italic;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+   }
+   .news .civilian-cyber-guard-2 {
+    position: absolute;
+    width: 416px;
+    top: 35px;
+    left: 24px;
+    font-family: "Inter-LightItalic", Helvetica;
+    font-weight: 300;
+    font-style: italic;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+   }
+   .news .copyright {
+    position: absolute;
+    width: 478px;
+    top: 46px;
+    left: 598px;
+    font-family: "Inter-LightItalic", Helvetica;
+    font-weight: 300;
+    font-style: italic;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+   }
+   .news .text-wrapper-3 {
+    position: absolute;
+    width: 376px;
+    top: 55px;
+    left: 1368px;
+    font-family: "Inter-LightItalic", Helvetica;
+    font-weight: 300;
+    font-style: italic;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+   }
+   .news .rectangle-5 {
+    width: 660px;
+    height: 316px;
+    top: 421px;
+    left: 155px;
+    position: absolute;
+    object-fit: cover;
+   }
+   .news .rectangle-6 {
+    width: 660px;
+    height: 316px;
+    top: 901px;
+    left: 155px;
+    position: absolute;
+    object-fit: cover;
+   }
+   .news .rectangle-7 {
+    width: 660px;
+    height: 316px;
+    top: 1381px;
+    left: 155px;
+    position: absolute;
+    object-fit: cover;
+   }
+   .news .rectangle-8 {
+    width: 660px;
+    height: 316px;
+    top: 1837px;
+    left: 155px;
+    position: absolute;
+    object-fit: cover;
+   }
+   .news .rectangle-9 {
+    width: 660px;
+    height: 316px;
+    top: 2360px;
+    left: 155px;
+    position: absolute;
+    object-fit: cover;
+   }
+   .news .p {
+    position: absolute;
+    width: 896px;
+    top: 428px;
+    left: 883px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: normal;
+   }
+   .news .text-wrapper-4 {
+    position: absolute;
+    width: 884px;
+    top: 892px;
+    left: 895px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: normal;
+   }
+   .news .text-wrapper-5 {
+    position: absolute;
+    width: 861px;
+    top: 1372px;
+    left: 883px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: normal;
+   }
+   .news .text-wrapper-6 {
+    position: absolute;
+    width: 873px;
+    top: 1836px;
+    left: 871px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: normal;
+   }
+   .news .text-wrapper-7 {
+    position: absolute;
+    width: 893px;
+    top: 2376px;
+    left: 851px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: normal;
+   }
+   .news .overlap-2 {
+    position: absolute;
+    width: 68px;
+    height: 62px;
+    top: 517px;
+    left: 895px;
+    background-image: url(./img/rectangle-56.png);
+    background-size: cover;
+    background-position: 50% 50%;
+   }
+   .news .rectangle-10 {
+    width: 68px;
+    height: 62px;
+    top: 20px;
+    left: 0;
+    position: absolute;
+    object-fit: cover;
+   }
+   .news .overlap-3 {
+    position: absolute;
+    width: 819px;
+    height: 50px;
+    top: 528px;
+    left: 972px;
+   }
+   .news .oct-cyber {
+    position: absolute;
+    width: 819px;
+    top: 0;
+    left: 0;
+    font-family: "Inter-Light", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: normal;
+   }
+   .news .overlap-4 {
+    position: absolute;
+    width: 68px;
+    height: 62px;
+    top: 2518px;
+    left: 848px;
+    background-image: url(./img/rectangle-64.png);
+    background-size: cover;
+    background-position: 50% 50%;
+   }
+   .news .overlap-5 {
+    position: absolute;
+    width: 819px;
+    height: 50px;
+    top: 2529px;
+    left: 925px;
+   }
+   .news .overlap-6 {
+    position: absolute;
+    width: 68px;
+    height: 62px;
+    top: 2029px;
+    left: 871px;
+    background-image: url(./img/rectangle-61.png);
+    background-size: cover;
+    background-position: 50% 50%;
+   }
+   .news .overlap-7 {
+    position: absolute;
+    width: 819px;
+    height: 50px;
+    top: 2040px;
+    left: 948px;
+   }
+   .news .rectangle-11 {
+    width: 68px;
+    height: 62px;
+    top: 1456px;
+    left: 883px;
+    position: absolute;
+    object-fit: cover;
+   }
+   .news .oct-cyber-2 {
+    top: 1467px;
+    left: 960px;
+    position: absolute;
+    width: 819px;
+    font-family: "Inter-Light", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: normal;
+   }
+   .news .rectangle-12 {
+    width: 68px;
+    height: 62px;
+    top: 1050px;
+    left: 895px;
+    position: absolute;
+    object-fit: cover;
+   }
+   .news .oct-cyber-3 {
+    top: 1039px;
+    left: 972px;
+    position: absolute;
+    width: 819px;
+    font-family: "Inter-Light", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: normal;
+   }
+   .news .rectangle-13 {
+    width: 126px;
+    height: 126px;
+    top: 13px;
+    left: 1779px;
+    position: absolute;
+    object-fit: cover;
+   }
+
+</style>
+
  </head>
  <body>
  <div class="news">
@@ -64,7 +440,12 @@
  <p class="oct-cyber-2">Oct 23, 2023&nbsp;&nbsp;&nbsp;&nbsp; Cyber Attack / Cyber incedent</p>
  <img class="rectangle-12" src="file:///C:/CCG%20Icons/Data.svg" />
  <p class="oct-cyber-3">Oct 23, 2023&nbsp;&nbsp;&nbsp;&nbsp; Cyber Attack / Cyber incedent</p>
- <img class="rectangle-13" src="file:///C:/CCG%20Icons/Home.svg" />
+
+ <a href="file:///C:/%D0%A1%D0%A1G/Main/main.html">
+    <img class="rectangle-13" src="file:///C:/CCG%20Icons/Home.svg" alt="Home">
+  </a>
+  
+ <!-- >img class="rectangle-13" src="file:///C:/CCG%20Icons/Home.svg" /> -->
  </div>
  </div>
  </body>
