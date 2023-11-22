@@ -155,44 +155,52 @@
 }
 
 
-.input {
+.inpute-1 input {
 position: absolute;
-top: 20px; 
-left:20px;
+top: 0px; 
+left:-1px;
+height: 40px;
 
 }
 
-/*
- .input-2 {
-position: absolute;
-top: 40px;
-left: 20px;
 
-} 
-*/
+.inpute-2 input {
+            
+  position: absolute;
+  top: 7px; 
+  left:5px;
+  height: 40px;
+  
 
+}
 
 
  </style>
  </head>
 
-
-
-
-
-
-
- <body>
+<body>
 
 
 
   <script>
-    function login() {
-      var username = document.getElementById('username').value;
-      var password = document.getElementById('password').value;
+
+
+        function openPage() {
+        
+        var newPageUrl = "file:///C:/%D0%A1%D0%A1G/Ready/ready.html";
+
+        
+        window.open(newPageUrl, "_blank");
+    }
+
+        function login() {
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+      
   
-      if (username === 'example' && password === 'password') {
-        alert('Login successful!');
+        if (username == "Alex" && password == "ccgthebest") {
+       // alert('Login successful!');
+        openPage();
         
       } else {
         alert('Invalid username or password. Please try again.');
@@ -211,8 +219,16 @@ left: 20px;
  </span>
  <span class="span">&nbsp;&nbsp; Log in </span>
  </p>
- <div class="overlap"><div class="text-wrapper-2">Confirm</div></div>
- <div class="overlap-group"><div class="rectangle"> <div class="inpute-1">  <input size="20"; type="text" id="username" name="username" required> </div> </div>
+<!-- <div class="overlap"><div class="text-wrapper-2" >Confirm</div> -->      
+ 
+        <div>
+
+ <button type="button" onclick="login()"> <div class="overlap"><div class="text-wrapper-2" >Confirm</div> </button> </div>
+
+ <div class="overlap-group"><div class="rectangle"> <div class="inpute-1"> 
+  
+  
+  <input size="61" type="username" id="username" name="username"  required > </div> </div>
 
  <!-- <div class="inpute-1">  <input type="text" id="username" name="username" required> </div> -->
 
@@ -223,14 +239,22 @@ left: 20px;
 
  <div class="rectangle-wrapper"><div class="rectangle-2"></div>
 
-<!-- <div class="inpute-2">  <input style:height="60px"; size="20"; type="text" id="password" name="password" required> </div> -->
+ <div class="inpute-2">  <input  size="61" type="password" id="password" name="password" required> </div>
 
 
 </div>
+
  <div class="text-wrapper-3">Email</div>
  <div class="text-wrapper-4">Password</div>
  <img class="img" src="file:///C:/CCG%20Icons/CCG.svg" />
- <div class="frame"><div class="text-wrapper-5">forgоt password ?</div></div>
+ 
+ <a href="file:///C:/%D0%A1%D0%A1G/Support/support.html" class="button">
+  <div class="frame">
+    <div class="text-wrapper-5">forgоt password ?</div>
+  </div>
+</a>
+
+
  </div>
  </div>
  </body>
